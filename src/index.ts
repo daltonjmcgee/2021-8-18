@@ -90,6 +90,7 @@ const spotlight1debug = gui.addFolder('Spotlight 1');
 spotlight1debug.add(spotLight1.position, 'x', -5, 5, .001)
 spotlight1debug.add(spotLight1.position, 'y', -5, 5, .001)
 spotlight1debug.add(spotLight1.position, 'z', -5, 5, .001)
+spotlight1debug.add(spotLight1, 'intensity', -5, 5, .001)
 scene.add(spotLight1);
 
 // Spot Light
@@ -100,6 +101,7 @@ const spotlight2debug = gui.addFolder('Spotlight 2');
 spotlight2debug.add(spotLight2.position, 'x', -5, 5, .001)
 spotlight2debug.add(spotLight2.position, 'y', -5, 5, .001)
 spotlight2debug.add(spotLight2.position, 'z', -5, 5, .001)
+spotlight2debug.add(spotLight2, 'intensity', -5, 5, .001)
 scene.add(spotLight2);
 
 // Spot Light
@@ -110,6 +112,7 @@ const spotlight3debug = gui.addFolder('Spotlight 3');
 spotlight3debug.add(spotLight3.position, 'x', -5, 5, .001)
 spotlight3debug.add(spotLight3.position, 'y', -5, 5, .001)
 spotlight3debug.add(spotLight3.position, 'z', -5, 5, .001)
+spotlight3debug.add(spotLight3, 'intensity', -5, 5, .001)
 scene.add(spotLight3);
 
 // Add Orbit Controls
