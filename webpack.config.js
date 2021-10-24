@@ -21,6 +21,25 @@ module.exports = {
           "sass-loader",
         ],
       },
+      {
+        test: /\.(jpe?g)$/i,
+        loader: 'file-loader',
+        options: {
+          name: '[name].[ext]',
+        }
+      },
+      {
+        test: /\.(gltf)$/,
+        use: [
+          {
+            loader: "gltf-webpack-loader",
+            options: {
+              name: 'model.[ext]',
+              outputPath: "static/"
+            }
+          }
+        ]
+      },
     ],
   },
   resolve: {
@@ -31,7 +50,7 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
   },
   plugins: [
-    new HtmlWebpackPlugin({ title: "2021-8-18 - ThreeJS" }),
+    new HtmlWebpackPlugin({ template: './src/index.html' }),
     new MiniCssExtractPlugin({
       filename: 'main.css',
     }),

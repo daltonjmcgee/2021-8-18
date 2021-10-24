@@ -1,0 +1,41 @@
+@import url("./globals/fonts.scss");
+
+body {
+  margin: 0;
+}
+
+.overlay {
+  position: absolute;
+  width: 50vw;
+  height: fit-content;
+  background-color: transparent;
+  color: white;
+  margin-top: 25px;
+  margin-left: 25px;
+  font-family: "Zen Kaku Gothic New";
+
+  a {
+    color: white;
+    transition: ease 0.5s;
+    text-decoration-color: wheat;
+    &:hover {
+      color: wheat;
+      transition: ease-in-out 0.5s;
+    }
+  }
+  h1,
+  h2 {
+    margin: 0;
+  }
+
+  h1 {
+    text-decoration: underline;
+    text-decoration-color: wheat;
+    font-weight: 300;
+  }
+
+  li {
+    margin-top: 0.75rem;
+    font-size: 1.15rem;
+  }
+}
